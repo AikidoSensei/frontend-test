@@ -5,7 +5,7 @@ import hurray from "../../assets/hurray.json";
 import './Wheel.css'
 import {motion, animate} from 'framer-motion'
 import { spinButton, marker, wheel } from '../../assets/data';
-const url = 'http://localhost:3000/spin'
+const url = 'https://frontend-test-jyvl.vercel.app/spin'
 const Wheel = () => {
 
   const [luckyNumber, setLuckynumber] = useState();
