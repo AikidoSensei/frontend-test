@@ -35,7 +35,7 @@ const showdown = [
     letter: n,
   },
 ]
-import { Stage, Container, AnimatedSprite, Sprite, Text } from '@pixi/react'
+
 import {
   off,
   vegas,
@@ -59,7 +59,7 @@ import {
 } from '../../assets/data'
 const Showdown = () => {
   return (
-    <div className='showdown-wrapper'>
+    <motion.div className='showdown-wrapper'>
       <motion.div
         className='showdown-container'
         variants={boxVariant}
@@ -148,7 +148,7 @@ const Showdown = () => {
           transition={{ delay: 1.5, duration: 1.3 }}
         />
       </motion.div>
-    </div>
+    </motion.div>
   )
 }
 

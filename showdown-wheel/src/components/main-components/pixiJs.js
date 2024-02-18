@@ -1,15 +1,5 @@
+import { Stage, Container, AnimatedSprite, Sprite, Text } from '@pixi/react'
 
-<img src={off} alt="off" />
-      <div className='top'>
-        <img src={vegas} alt='vegas' className='title'/>
-a
-        <img src={offBolt} width={150} height={200} alt='offBolt' />
-        <img src={slots} alt='slots' className='title'/>
-      </div>
-      <div className='mid'></div>
-      <div className='bottom'></div>
-
-        const [vegasView, setVegasView] = React.useState(0)
   
   const scale = 1.7
   const anchor = 0.1
