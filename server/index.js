@@ -9,7 +9,7 @@ const spinRoute = require('./route')
 app.use(bodyParser.json())
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://adavize-ensake-test.vercel.app/',
     methods: 'GET',
     credentials: true,
   })
