@@ -1,0 +1,26 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url('../showdown/header.png') no-repeat center/cover;
+  
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.toggle{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index: 1000;
+  outline:none;
+  border: none;
+  background-color: rgba(172, 255, 47, 0.243) ;
+  color:white;
+  /* opacity: 0.7; */
+  transition: 0.2s;
+  box-shadow: 0px, 0px, 10px, greenyellow;
+}
+.toggle:hover{
+  background-color: greenyellow;
+}
+
