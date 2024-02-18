@@ -8,7 +8,7 @@ import { spinButton, marker, wheel } from '../../assets/data';
 const url = 'https://frontend-test-jyvl.vercel.app/spin'
 const Wheel = () => {
 
-  const [luckyNumber, setLuckynumber] = useState();
+  const [luckyNumber, setLuckynumber] = useState(null);
   const [value, setValue] = useState(0)
   const [loadSpin, setLoadSpin] = useState(true)
   const spinner = document.getElementById('spin')
@@ -110,9 +110,17 @@ const Wheel = () => {
                 <img src={spinButton} alt='button' />
               </a>
               <div id='display'>
-                {luckyNumber&&<div className='hurray'><Lottie animationData={hurray} loop={true} /></div>}
-                <h1 style={{color:'white'}}>Your Lucky Number is {luckyNumber}</h1>
-                </div>
+                {luckyNumber && (
+                  <>
+                    <div className='hurray'>
+                      <Lottie animationData={hurray} loop={true} />
+                    </div>
+                    <h1 style={{ color: 'white' }}>
+                      Your Lucky Number is {luckyNumber}
+                    </h1>
+                  </>
+                )}
+              </div>
             </div>
           </>
         )}
